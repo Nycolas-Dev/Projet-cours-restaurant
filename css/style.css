@@ -1,0 +1,612 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size:62.5%;
+}
+
+img{
+    max-width:100%;
+}
+
+body{
+    width:100%;
+    font-family: 'Athiti', sans-serif;
+    font-size:18px;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Merienda', cursive;
+    text-align:center;
+}
+
+header span::after, header span::before, main h1::after, main h1::before, main h2::after, main h2::before, 
+main h3::after, main h3::before, main h4::after, main h4::before{
+    font-family:"Font Awesome 5 Free";
+    content:"\f005";
+    font-size:1.5rem;
+    color:#950000;
+    vertical-align:middle;
+    margin:0 .5em;
+}
+
+h1{
+    font-size:30px;
+}
+
+h2{
+    font-size:25px;
+}
+
+h3{
+    font-size:20px;
+}
+
+
+
+/*
+    HEADER
+*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin-top:2em;
+}
+
+header .logo{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-decoration:none;
+    color:black;
+}
+
+header .logo img{
+    width:30%;
+    margin-bottom:1em;
+}
+
+header .logo span{
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:2rem;
+}
+
+header nav ul{
+    list-style:none;
+    padding:0;
+    margin-top:2em;
+}
+
+header nav ul li{
+    background-color:#ebe3db;
+}
+
+header nav ul li a{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    color:#4c4343;
+    font-weight:bold;
+    padding:1em 0;
+    border-bottom:1px solid #4c4343;
+}
+
+header nav ul li a:active, header nav ul li a.active{
+    background-color:#4c4343;
+    color:white;
+}
+
+/*
+    MAIN
+*/
+.container{
+    width:95%;
+    margin:1em auto;
+}
+
+.slick-prev, .slick-next{
+    z-index:99;
+}
+
+.slick-prev{
+    left:0!important;
+}
+
+.slick-next{
+    right:0!important;
+}
+
+.slick-dots li{
+    margin:0!important;
+}
+
+.slick-dots li.slick-active button:before{
+    color:#930000!important;
+}
+
+.slick-dots li button:before{
+    font-size:2rem!important;
+}
+
+main h1{
+    font-size:1.8rem;
+    font-weight:bold;
+    margin:2em 0;
+}
+
+main .presentation article div p{
+    margin-bottom: 1em;
+}
+
+main h2{
+    margin-bottom:1em;
+}
+
+main .specialMenu article{
+    background-color:#ebe3db;
+    padding:.5em 0;
+    margin:2em 0;
+}
+
+main .specialMenu article figure{
+    margin-top:1em;
+}
+
+main .specialMenu article ul{
+    list-style:none;
+}
+
+main .specialMenu article ul li{
+    border-bottom:1px dashed black;
+    line-height:2.5em;
+}
+
+main .specialMenu article ul li i{
+    color:#930000;
+    padding:0 1em 0 2em;
+    font-size:1rem;
+    vertical-align:middle;
+}
+
+main .specialMenu article .seeMore{
+    display:flex;
+    justify-content:center;
+    background-color:#4c4343;
+    margin:1em;
+    padding:.5em 0;
+    color:white;
+    text-decoration:none;
+}
+
+main .specialMenu article .seeMore img{
+    width:2rem;
+    margin-right:.5em;
+}
+
+
+/*
+    PAGE INTERNE : Menus
+*/
+
+main .filtre{
+    display:flex;
+    justify-content:center;
+}
+
+main .filtre button{
+    margin:0 1em;
+    background-color:#ebe3db;
+    border:none;
+    padding:1em;
+    text-transform:uppercase;
+    
+}
+
+main .filtre button:hover, 
+main .filtre button:focus, 
+.mixitup-control-active{
+    color:white!important;
+    background-color:#930000!important;
+}
+
+main .menuPlat, 
+main .menuDessert, 
+main .menuCocktails{
+    background-color:#ebe3db;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+main .menuPlat div, 
+main .menuDessert figure, 
+main .menuCocktails figure{
+    flex-basis:45%;
+    margin: 1em 0;
+}
+
+main .menuPlat div figure img, 
+main .menuDessert figure img, 
+main .menuCocktails figure img{
+    box-shadow: -2px 1px 5px rgba(0,0,0.6);
+}
+
+main .menuPlat div figure:hover, 
+main .menuDessert div figure:hover, 
+main .menuCocktails div figure:hover{
+    transform:scale(1.1);
+}
+
+/*
+    PAGE INTERNE : ABOUT
+*/
+.about section div p{
+    margin-bottom: 1em;
+}
+
+.about section video{
+    max-width:100%;
+}
+
+.about section article{
+    background-color:#ebe3db;
+    padding:1em 0 .2em 0;
+}
+
+.about section article figure{
+    margin-bottom:1em;
+    text-align:center;
+}
+
+.about section article figure img{
+    width:90%;
+}
+
+.about section article figure figcaption{
+    margin-top:-.5em;
+}
+
+/*
+    PAGE INTERNE : Contact
+*/
+.contact{
+    
+}
+
+.contact p{
+    text-align:center;
+}
+
+.contact p em span, .contact form div fieldset label abbr{
+    color:#930000;
+    border-bottom: 1px dotted #930000;
+}
+
+.contact form{
+    background-color:#ebe3db;
+    padding:1em;
+    margin-bottom:2rem;
+}
+
+.contact form div{
+    display:flex;
+    justify-content:center;
+}
+
+.contact form div fieldset{
+    position:relative;
+    border:none;
+    display:flex;
+    flex-direction:column;
+}
+
+.contact form div fieldset:last-child{
+    margin-left:2em;
+}
+
+.contact form div fieldset legend,
+.contact label[class="request"]{
+    display:block;
+    font-family: 'Merienda', cursive;
+    padding-bottom:1rem;
+}
+
+.contact form div fieldset label{
+    margin-bottom:0;
+}
+
+.contact form div fieldset label abbr{
+    position: absolute;
+    left:-.8em;
+}
+
+.contact form div fieldset input{
+    margin-bottom:1em;
+    padding:.5rem;
+    border-radius:.5rem;
+    border-width:1px;
+    box-shadow:none;
+}
+
+.contact textarea{
+    width:100%;
+    min-height: 8rem;
+    padding:.5rem;
+}
+
+
+.contact button{
+    display:block;
+    margin:3rem auto 2rem auto;
+    padding:1rem 6rem;
+    background-color:#4c4343;
+    color:white;
+    border:none;
+    border-radius:.5rem;
+}
+
+.contact iframe{
+    width:100%;
+    min-height:10rem;
+}
+
+
+
+/*
+    Footer
+*/
+footer{
+    background-image:url('../ressources/images/footer-bg.jpg');
+    background-size:contain;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:2em 1em;
+}
+
+footer section{
+    padding-bottom:2em;
+}
+
+footer section h2{
+    font-size:18px;
+    border-bottom:1px dotted white;
+    line-height:2.5em;
+}
+
+footer section ul{
+    list-style:none;
+    margin-top:.5em;
+}
+
+footer section div i{
+    font-size:2rem;
+    padding:1em .5em;
+}
+
+
+/*
+    MEDIA
+*/
+
+/* TABLETTE */
+@media screen and (min-width:780px){
+    header nav ul{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        align-items:center;
+        background-color:#ebe3db;
+    }
+    
+    header nav ul li{
+        padding:0 2em;
+    }
+    
+    header nav ul li a{
+        border-bottom:none;
+    }
+    
+    header nav ul li a:active, header nav ul li a.active{
+        padding:1em 2em;
+    }
+    
+    main .menuPlat div, main .menuDessert figure, main .menuCocktails figure{
+        flex-basis: 30%;
+    }
+    
+    .about section{
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        margin-bottom:2em;
+    }
+    
+    .about section video{
+        width:80%;
+    }
+    
+    .about section article{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
+    
+    .about section article figure{
+        flex-basis:45%;
+    }
+    
+    .contact form div fieldset{
+        width: 100%;
+    }
+    
+    footer{
+        display:flex;
+        justify-content:space-around;
+    }
+}
+
+
+/* ORDINATEUR */
+@media screen and (min-width:980px){
+    header{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        max-width:1400px;
+        margin:0 auto;
+    }
+    
+    header .logo{
+        flex-direction:row;
+    }
+    
+    header .logo img{
+        width:20%;
+    }
+    
+    header nav ul{
+        background-color:transparent;
+    }
+    
+    header nav ul li{
+        padding:0;
+        margin-left:2em;
+    }
+    
+    header nav ul li a{
+        padding:1em 2em;
+    }
+    
+    .container{
+        max-width:1400px;
+    }
+    
+    /*
+        ABOUT
+    */
+    
+    main .presentation article{
+        display:flex;
+        flex-direction:row-reverse;
+        margin-bottom:2em;
+    }
+    
+    main .presentation article img{
+        width:40%;
+    }
+    
+    /*
+        MENU
+    */
+    
+    .mixitup h2{
+        padding-top: 2rem;
+    }
+    
+    .mixitup p{
+        text-align:center;
+        padding-bottom: 1rem;
+    }
+    
+    main .specialMenu{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    
+    main .specialMenu h2{
+        flex-basis:100%;
+    }
+    
+    main .specialMenu article{
+        flex-basis:30%;
+    }
+    
+    /*main .specialMenu article:nth-child(2){
+        margin-left:2em;
+        margin-right:2em;
+    }*/
+    
+    main .menuPlat figure,
+    main .menuDessert figure,
+    main .menuCocktails figure{
+        position:relative;
+        transition: transform .5s;
+    }
+    
+    main .menuPlat figure:hover,
+    main .menuDessert figure:hover,
+    main .menuCocktails figure:hover{
+        transform:scale(1.1);
+    }
+    
+    main .menuPlat figure:hover figcaption,
+    main .menuDessert figure:hover figcaption,
+    main .menuCocktails figure:hover figcaption{
+        opacity:1;
+    }
+    
+    main .menuPlat figcaption,
+    main .menuDessert figcaption,
+    main .menuCocktails figcaption{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:rgba(0,0,0,.6);
+        color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        font-size:5rem;
+        font-weight:bold;
+        opacity:0;
+        transition:.7s all;
+    }
+    
+    main .menuPlat figcaption::after,
+    main .menuDessert figcaption::after,
+    main .menuCocktails figcaption::after{
+        content:"";
+        position:absolute;
+        top:3rem;
+        right:3rem;
+        bottom:3rem;
+        left:3rem;
+        border:4px solid white;
+    }
+    
+    main .menuPlat figcaption img,
+    main .menuDessert figcaption img,
+    main .menuCocktails figcaption img{
+        display:block;
+        width:5rem;
+        margin-bottom:1rem;
+    }
+    
+    main .menuPlat figcaption h3::after,
+    main .menuPlat figcaption h3::before,
+    main .menuDessert figcaption h3::after,
+    main .menuDessert figcaption h3::before,
+    main .menuCocktails figcaption h3::after,
+    main .menuCocktails figcaption h3::before{
+        display:none;
+    }
+    
+    
+    /* 
+        CONTACT
+    */
+    .contact form{
+        width: 80%;
+        margin: 2rem auto;
+    }
+}

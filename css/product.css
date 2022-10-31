@@ -1,0 +1,371 @@
+                        /*********************
+                               VARIABLE
+                        **********************/
+
+:root {
+    /*General*/
+    --max-width: 1140px;
+    --font-size-default: 10rem;
+
+    --line-height: 2.0rem;
+    
+    /*Fonts*/
+    --font-family: "Open Sans";
+    --font-title: "Raleway";
+    
+    /*Color*/
+    --background-container #eee;
+    --background-grey: #eee;
+    --background-header: #0c6588 ;
+    --background-menu: #e2f7ff;
+    --background-main:: #fff;
+    --background-footer: #333;
+    --title-color: #333;
+    --color-text: #555;
+    --color-text-header: #e2f7ff;
+    --color-text-footer: #ddd;
+    --color-link: #0c6588;
+    --color-link-hover: #000;
+    --color-link-footer: #eee;
+    
+    /*Border*/
+    /*- sm: 1px solid #eee*/
+    /*- md: 1px solid #ddd*/
+    /*- lg: 2px solid #ccc*/
+    
+    /*Shadow*/
+    /*- sm: 0 0 1px rgba(0,0,0,0.2)*/
+    /*- md: 0 0 3px rgba(0,0,0,0.3)*/
+    /*- lg: 0 0 5px rgba(0,0,0,0.4)*/
+    /*- xl: 0 10px 20px rgba(0,0,0,0.5)*/
+}
+
+
+
+
+
+
+                        /******************
+                               GENERAL
+                        *******************/
+
+html {
+    font-size: 75%;
+}
+
+*{
+     box-sizing : border-box ;
+}
+
+.container{
+    margin : 0;
+    padding : 0;
+    min-width: 100%;
+}
+
+.container {
+    margin: auto;
+    font-size: var(--font-size-default);
+    line-height: var(--line-height);
+    font-family: var(--font-family), sans-serif;
+    background-color: var(--background-container);
+}
+                        /******************
+                                TITLE
+                        *******************/
+
+.container h1 {
+    font-size: var(--font-size-title1);
+}
+
+.container h2 {
+    font-size: var(--font-size-title2);
+}
+
+.container h3 {
+    font-size: var(--font-size-title3);
+}
+
+
+
+                        /******************
+                                HEADER
+                        *******************/
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin-top:2em;
+}
+
+header .logo{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-decoration:none;
+    color:black;
+    width: 50em;
+}
+
+header .logo img{
+    width:30%;
+    margin-bottom:1em;
+}
+
+header .logo span{
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:2rem;
+}
+
+header nav ul{
+    list-style:none;
+    padding:0;
+    margin-top:2em;
+}
+
+header nav ul li{
+    background-color:#ebe3db;
+}
+
+header nav ul li a{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    color:#4c4343;
+    font-weight:bold;
+    padding:1em 0;
+    border-bottom:1px solid #4c4343;
+}
+
+
+
+
+                        /******************
+                                MAIN
+                        *******************/
+.menu {
+    display: none;
+}
+
+
+                        /******************
+                               FOOTER
+                        *******************/
+
+@media screen and (min-width:780px){
+    header nav ul{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        align-items:center;
+        background-color:#ebe3db;
+    }
+    
+    header nav ul li{
+        padding:0 2em;
+    }
+    
+    header nav ul li a{
+        border-bottom:none;
+    }
+    
+    header nav ul li a:active, header nav ul li a.active{
+        padding:1em 2em;
+    }
+    
+    main .menuPlat div, main .menuDessert figure, main .menuCocktails figure{
+        flex-basis: 30%;
+    }
+    
+    .about section{
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        margin-bottom:2em;
+    }
+    
+    .about section video{
+        width:80%;
+    }
+    
+    .about section article{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
+    
+    .about section article figure{
+        flex-basis:45%;
+    }
+    
+    .contact form div fieldset{
+        width: 100%;
+    }
+    
+    footer{
+        display:flex;
+        justify-content:space-around;
+    }
+}
+
+
+/* ORDINATEUR */
+@media screen and (min-width:980px){
+    header{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        max-width:1400px;
+        margin:0 auto;
+    }
+    
+    header .logo{
+        flex-direction:row;
+    }
+    
+    header .logo img{
+        width:20%;
+    }
+    
+    header nav ul{
+        background-color:transparent;
+    }
+    
+    header nav ul li{
+        padding:0;
+        margin-left:2em;
+    }
+    
+    header nav ul li a{
+        padding:1em 2em;
+    }
+    
+    .container{
+        max-width:1400px;
+    }
+    
+    /*
+        ABOUT
+    */
+    
+    main .presentation article{
+        display:flex;
+        flex-direction:row-reverse;
+        margin-bottom:2em;
+    }
+    
+    main .presentation article img{
+        width:40%;
+    }
+    
+    /*
+        MENU
+    */
+    
+    .mixitup h2{
+        padding-top: 2rem;
+    }
+    
+    .mixitup p{
+        text-align:center;
+        padding-bottom: 1rem;
+    }
+    
+    main .specialMenu{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    
+    main .specialMenu h2{
+        flex-basis:100%;
+    }
+    
+    main .specialMenu article{
+        flex-basis:30%;
+    }
+    
+    /*main .specialMenu article:nth-child(2){
+        margin-left:2em;
+        margin-right:2em;
+    }*/
+    
+    main .menuPlat figure,
+    main .menuDessert figure,
+    main .menuCocktails figure{
+        position:relative;
+        transition: transform .5s;
+    }
+    
+    main .menuPlat figure:hover,
+    main .menuDessert figure:hover,
+    main .menuCocktails figure:hover{
+        transform:scale(1.1);
+    }
+    
+    main .menuPlat figure:hover figcaption,
+    main .menuDessert figure:hover figcaption,
+    main .menuCocktails figure:hover figcaption{
+        opacity:1;
+    }
+    
+    main .menuPlat figcaption,
+    main .menuDessert figcaption,
+    main .menuCocktails figcaption{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:rgba(0,0,0,.6);
+        color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        font-size:5rem;
+        font-weight:bold;
+        opacity:0;
+        transition:.7s all;
+    }
+    
+    main .menuPlat figcaption::after,
+    main .menuDessert figcaption::after,
+    main .menuCocktails figcaption::after{
+        content:"";
+        position:absolute;
+        top:3rem;
+        right:3rem;
+        bottom:3rem;
+        left:3rem;
+        border:4px solid white;
+    }
+    
+    main .menuPlat figcaption img,
+    main .menuDessert figcaption img,
+    main .menuCocktails figcaption img{
+        display:block;
+        width:5rem;
+        margin-bottom:1rem;
+    }
+    
+    main .menuPlat figcaption h3::after,
+    main .menuPlat figcaption h3::before,
+    main .menuDessert figcaption h3::after,
+    main .menuDessert figcaption h3::before,
+    main .menuCocktails figcaption h3::after,
+    main .menuCocktails figcaption h3::before{
+        display:none;
+    }
+    
+    
+    /* 
+        CONTACT
+    */
+    .contact form{
+        width: 80%;
+        margin: 2rem auto;
+    }
+}

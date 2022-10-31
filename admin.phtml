@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="exercice final - Freshly Restaurant">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link type="text/CSS" rel="stylesheet" href="css/product.css"/>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/00fca59a8b.js" crossorigin="anonymous"></script>
+    <title>Freshly Restaurant</title>
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">
+            <img src="ressources/images/logo.png" alt="Logo Freshly Restaurant">
+            <span>Freshly Restaurant</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="php/login.php">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main d-flex">
+	     
+        
+        <div class="nav flex-column nav-pills mx-4 w-25" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <h3 class="text-secondary font-weight-bold my-4"><span class="icon-home mr-2"></span></i>Accueil</h3>
+              <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Tableau de bord</a>
+              <h3 class="text-secondary font-weight-bold my-4"><span class="icon-globe mr-2"></span></i>Menus</h3>
+              <a class="nav-link" id="v-pills-rubric-tab" data-toggle="pill" href="#v-pills-rubric" role="tab" aria-controls="v-pills-rubric" aria-selected="false">Ajout plats</a>
+              <a class="nav-link" id="v-pills-actuality-tab" data-toggle="pill" href="#v-pills-actuality" role="tab" aria-controls="v-pills-actuality" aria-selected="false">Modification des menus</a>
+              <h3 class="text-secondary font-weight-bold my-4"><span class="icon-shopping-basket mr-2"></span>Réservations</h3>
+              <a class="nav-link" id="v-pillsorders-tab" data-toggle="pill" href="#v-pills-orders" role="tab" aria-controls="v-pills-orders" aria-selected="false">Gestion des réservations</a>
+              <h3 class="text-secondary font-weight-bold my-4" ><span class="icon-cogs mr-2"></span>Paramètres</h3>
+              <a class="nav-link" id="v-pills-user-tab" data-toggle="pill" href="#v-pills-user" role="tab" aria-controls="v-pills-user" aria-selected="false">Gestion des utilisateurs</a>
+              <a class="nav-link" id="v-pills-roles-tab" data-toggle="pill" href="#v-pills-roles" role="tab" aria-controls="v-pills-roles" aria-selected="false">Gestions des rôles</a>
+              <a class="nav-link" id="v-pills-preferences-tab" data-toggle="pill" href="#v-pills-preferences" role="tab" aria-controls="v-pills-preferences" aria-selected="false">Préférences</a>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <p>Vous n'êtes pas connecté.</p>
+              </div>
+              <div class="tab-pane fade" id="v-pills-rubric" role="tabpanel" aria-labelledby="v-pills-rubric-tab">
+                  
+                   <form action="php/addMenu.php" method="post">
+                        <div>
+                            <fieldset>
+                				<label for="name">Nom du plat</label>
+                				<input type="text" name="name" id="name" required>
+                				<select id="typeMenu">
+                                  <option value="meatMenu">Meat Menu</option>
+                                  <option value="fishMenu">Fish Menu</option>
+                                  <option value="vegeMenu">Vege Menu</option>
+                                </select>
+                			</fieldset>
+                        </div>
+            			<button name ='submit' type="submit">Ajouter</button>
+                    </form>
+                  
+              </div>
+              <div class="tab-pane fade" id="v-pills-actuality" role="tabpanel" aria-labelledby="v-pills-actuality-tab">
+                  C
+              </div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                  D
+              </div>
+              <div class="tab-pane fade" id="v-pills-store" role="tabpanel" aria-labelledby="v-pills-store-tab">
+                  E
+              </div>
+              <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab">
+                <style type="text/css">
+                .tg  {border-collapse:collapse;border-spacing:0;}
+                .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                  overflow:hidden;padding:10px 5px;word-break:normal;}
+                .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                .tg .tg-baqh{text-align:center;vertical-align:top}
+                </style>
+                    
+                    <table class="tg">
+                    <thead>
+                      <tr>
+                        <th class="tg-baqh">date</th>
+                        <th class="tg-baqh">time</th>
+                        <th class="tg-baqh">number</th>
+                        <th class="tg-baqh">name</th>
+                        <th class="tg-baqh">email</th>
+                        <th class="tg-baqh">phone</th>
+                        <th class="tg-baqh">request</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                            require 'php/reservation.php';
+                        ?>
+                    </tbody>
+                    </table>
+                 
+              </div>
+              <div class="tab-pane fade" id="v-pills-user" role="tabpanel" aria-labelledby="v-pills-user-tab">
+                  G
+              </div>
+              <div class="tab-pane fade" id="v-pills-roles" role="tabpanel" aria-labelledby="v-pills-roles-tab">
+                  H
+              </div>
+              <div class="tab-pane fade" id="v-pills-preferences" role="tabpanel" aria-labelledby="v-pills-preferences-tab">
+                  I
+              </div>
+            </div>
+              
+          
+    </main>
+
+    </footer>
+    
+    <script 
+    src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script 
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+          $('.slider').slick({
+              dots:true,
+              infinite: true,
+              speed: 300,
+              slidesToShow: 1,
+              adaptiveHeight: true
+          });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
